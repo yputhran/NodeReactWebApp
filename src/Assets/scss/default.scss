@@ -1,0 +1,56 @@
+@import "_config.scss";
+
+header {
+	position: relative;
+	display: block;
+	width: 100%;
+	background: $black;
+	color: $white;
+	height: 90px;
+
+	.logo{
+		position: absolute;
+		top: 35%; left: 15px;
+		@include translateY(-25%);
+	}
+
+	nav,
+	nav ul,
+	nav ul li{
+		margin:0;
+		padding: 20px;
+	}
+
+	nav{
+		posiiton: absolute;
+		top: 80%; right: 15px;
+		float: right;
+		@include translateY(-25%);
+
+		ul li{
+			list-style-type: none;
+			display: inline-block;
+
+			&.last{
+				margin: 0;
+			}
+			a{
+				font-size: 19px;
+				line-height: normal;
+				color: $white;
+			}
+		}
+	}
+}
+
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color:$black;
+  color:$red;
+  text-align: left;
+}
